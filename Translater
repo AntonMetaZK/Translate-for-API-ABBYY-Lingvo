@@ -10,7 +10,7 @@ headers_auts = {"Authorization": "Basic " + KEY}
 auth = requests.post(URL_AUTH, headers=headers_auts)
 
 
-#Окно приложения
+#API
 def check():
     word = entry.get()
     if word.isdigit() == False:
@@ -36,7 +36,7 @@ def check():
     else:
         mb.showinfo("Ошибка", "Должно быть введено слово")
 
-
+#Окно приложения
 root = Tk()
 root.title("Переводчик с Русского на Английский")
 root.geometry("350x250")
